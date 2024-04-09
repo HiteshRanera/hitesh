@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        
+// 2, 1, 3, 4, 7, 11, 18, 29, 47, 76, 123 .... 3000
+
+var number1 = 2;
+var number2 = 1 ;
+var flash = 0 ;
+var count = 1;
+
+ document.write(number1); //2
+ document.write("," + number2);//1
+
+ 
+ number1 = number1 + number2 ; 
+ document.write("," + number1);//3
+ flash= number1 ;
+
+while( count < 7)
+{ number1 = flash + number2 ;
+ document.write("," + number1);//4
+ number2 = flash + number1 ;
+ document.write("," + number2);//7
+ flash = number2 + number1 ;
+ document.write("," + flash);//7
+ count++ ; }
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

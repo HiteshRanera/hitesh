@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+
+   <div class="container  mt-5" align="center">
+ <form action="" >
+    <div class="card p-3 text-bg-secondary" style="max-width: 540px;">
+        <div class="row ">
+
+            <div class="col-6  h3 mb-3" > Name : <span id="name"> hitesh</span></div>
+            <div class="col-6 h3"> Price : <span id="price"> 700 Rs</span></div>
+         
+          <div class="col-4">
+            <img src="https://picsum.photos/200/300" class="img-fluid rounded ms-4" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">description</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.  Lorem ipsum dolor sit Impedit eligendi nemo doloribus ea animi?</p>
+              <div id="btn">
+
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+ </form>
+   </div>
+
+   <script>
+
+    var name = prompt("enter your name ");
+    var price = prompt(" enter price");
+    
+    var btn = (` <button type="submit" class="btn btn-outline-light" id="addTowCard" > add to card </button>
+              <button type="button" class="btn btn-outline-light" id="buyNow" > buy now </button>
+            `)
+            
+     
+
+
+    document.getElementById("name").innerHTML= name ;
+    document.getElementById("price").innerHTML= price ;
+    
+  
+    document.getElementById("btn").innerHTML= btn;
+
+
+
+   </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
